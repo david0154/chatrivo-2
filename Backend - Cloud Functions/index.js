@@ -40,7 +40,7 @@ const options = {
 
 const MAX_FCM_LIMIT = 10000
 
-const packageName = "com.teamxdevelopers.superchat"
+const packageName = "com.nexuzy.chatrivo"
 
 
 
