@@ -1,7 +1,7 @@
 // ============================================================
 // Chatrivo - App build.gradle
 // Package:  com.nexuzy.chatrivo
-// Version:  4.2.0 (versionCode 420)
+// Version:  4.2.1 (versionCode 421)
 // Updated:  March 2026
 // ============================================================
 
@@ -18,8 +18,8 @@ android {
         applicationId "com.nexuzy.chatrivo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 420
-        versionName "4.2.0"
+        versionCode 421
+        versionName "4.2.1"
         multiDexEnabled true
 
         ndk {
@@ -28,39 +28,70 @@ android {
 
         vectorDrawables.useSupportLibrary = true
 
-        // ── App Identity ──────────────────────────────────────
-        resValue 'string', "app_name",         "Chatrivo"
-        resValue 'string', "app_folder_name",  "Chatrivo"
-        resValue 'string', "your_company_name", "Nexuzy"
+        // ╔══════════════════════════════════════════════════════════════╗
+        // ║                  ★  APP IDENTITY  ★                         ║
+        // ╚══════════════════════════════════════════════════════════════╝
+        resValue 'string', "app_name",          "Chatrivo"          // ← App display name
+        resValue 'string', "app_folder_name",   "Chatrivo"          // ← Media folder name on device
+        resValue 'string', "your_company_name", "Nexuzy"            // ← Company name
 
-        // ── Deep Link Hosts ───────────────────────────────────
-        resValue 'string', "group_invite_host", "join.chatrivo.nexuzy.com"
-        resValue 'string', "account_link",      "chat.chatrivo.nexuzy.com"
+        // ╔══════════════════════════════════════════════════════════════╗
+        // ║               ★  DEEP LINK HOSTS  ★                         ║
+        // ╚══════════════════════════════════════════════════════════════╝
+        resValue 'string', "group_invite_host", "join.chatrivo.nexuzy.com"   // ← Group invite domain
+        resValue 'string', "account_link",      "chat.chatrivo.nexuzy.com"   // ← Account link domain
 
-        // ── Branding ──────────────────────────────────────────
+        // ╔══════════════════════════════════════════════════════════════╗
+        // ║                  ★  BRANDING  ★                             ║
+        // ╚══════════════════════════════════════════════════════════════╝
         resValue 'string', "website", "https://nexuzy.com"
         resValue 'string', "email",   "support@nexuzy.com"
 
-        // ── API Keys (fill your values) ───────────────────────
-        resValue 'string', "agora_app_id",         ""
-        resValue 'string', "maps_api_key",          ""
-        resValue 'string', "foursquare_client_id",  ""
-        resValue 'string', "foursquare_client_secret", ""
-        resValue 'string', "sarvam_api_key",        ""   // Sarvam AI
+        // ╔══════════════════════════════════════════════════════════════╗
+        // ║             ★  API KEYS — FILL YOUR VALUES  ★               ║
+        // ║  Replace each "YOUR_XXXX" with your real key before build   ║
+        // ╚══════════════════════════════════════════════════════════════╝
 
-        // ── AdMob ─────────────────────────────────────────────
-        resValue 'string', "admob_app_id",            "ca-app-pub-3940256099942544~3347511713"
-        resValue 'string', "banner_unit_id_new_chat",  ""
-        resValue 'string', "banner_unit_id_main",      ""
-        resValue 'string', "interstitial_ad_id",       ""
+        // ── Agora RTC (Video/Voice Calls) ─────────────────────────────
+        // Get from: https://console.agora.io → Project Management → App ID
+        resValue 'string', "agora_app_id",               "YOUR_AGORA_APP_ID"
 
-        // ── Limits ────────────────────────────────────────────
-        resValue 'integer', "max_group_call_count",    "20"
-        resValue 'integer', "max_status_video_time",   "60"
-        resValue 'integer', "max_broadcast_users_count","500"
-        resValue 'integer', "max_group_users_count",    "1024"
+        // ── Google Maps ───────────────────────────────────────────────
+        // Get from: https://console.cloud.google.com → APIs & Services → Maps SDK for Android
+        resValue 'string', "maps_api_key",               "YOUR_GOOGLE_MAPS_API_KEY"
 
-        // ── Settings ──────────────────────────────────────────
+        // ── Sarvam AI ─────────────────────────────────────────────────
+        // Get from: https://dashboard.sarvam.ai → API Keys
+        resValue 'string', "sarvam_api_key",             "YOUR_SARVAM_AI_API_KEY"
+
+        // ── Foursquare (Location Places) ──────────────────────────────
+        // Get from: https://developer.foursquare.com → My Apps → Client ID / Client Secret
+        resValue 'string', "foursquare_client_id",       "YOUR_FOURSQUARE_CLIENT_ID"
+        resValue 'string', "foursquare_client_secret",   "YOUR_FOURSQUARE_CLIENT_SECRET"
+
+        // ╔══════════════════════════════════════════════════════════════╗
+        // ║                  ★  ADMOB  ★                                ║
+        // ║  Get from: https://admob.google.com → Apps → App ID         ║
+        // ╚══════════════════════════════════════════════════════════════╝
+        resValue 'string', "admob_app_id",               "YOUR_ADMOB_APP_ID"
+        // Format: ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX
+        // Example test ID (for debug only): ca-app-pub-3940256099942544~3347511713
+
+        resValue 'string', "banner_unit_id_new_chat",    "YOUR_BANNER_AD_UNIT_ID_NEW_CHAT"
+        resValue 'string', "banner_unit_id_main",        "YOUR_BANNER_AD_UNIT_ID_MAIN"
+        resValue 'string', "interstitial_ad_id",         "YOUR_INTERSTITIAL_AD_UNIT_ID"
+
+        // ╔══════════════════════════════════════════════════════════════╗
+        // ║                  ★  LIMITS  ★                               ║
+        // ╚══════════════════════════════════════════════════════════════╝
+        resValue 'integer', "max_group_call_count",        "20"
+        resValue 'integer', "max_status_video_time",       "60"
+        resValue 'integer', "max_broadcast_users_count",   "500"
+        resValue 'integer', "max_group_users_count",       "1024"
+
+        // ╔══════════════════════════════════════════════════════════════╗
+        // ║                  ★  SETTINGS  ★                             ║
+        // ╚══════════════════════════════════════════════════════════════╝
         resValue 'bool',   "ignore_battery_optimizations_dialog", "true"
         resValue 'string', "encryption_type", "AES"
         resValue 'string', "memojiBaseUrl",   "https://raw.githubusercontent.com/cde/fffrte/"
@@ -72,6 +103,12 @@ android {
             versionNameSuffix "-debug"
             splits.abi.enable     = false
             splits.density.enable = false
+
+            // ── Debug: use test/sandbox API keys ──────────────────────
+            resValue 'string', "admob_app_id",         "ca-app-pub-3940256099942544~3347511713"
+            resValue 'string', "banner_unit_id_main",  "ca-app-pub-3940256099942544/6300978111"
+            resValue 'string', "banner_unit_id_new_chat", "ca-app-pub-3940256099942544/6300978111"
+            resValue 'string', "interstitial_ad_id",   "ca-app-pub-3940256099942544/1033173712"
         }
         release {
             buildConfigField "Boolean", "DEBUG_MODE", "false"
@@ -104,15 +141,15 @@ android {
     }
 }
 
-// ── Bill of Materials (Firebase, Compose) ─────────────────────────────────────
-def firebase_bom     = '33.1.2'
+// ── Bill of Materials (Firebase, Compose) ───────────────────────────────────
+def firebase_bom      = '33.1.2'
 def lifecycle_version = '2.8.3'
 def nav_version       = '2.7.7'
 def coroutines_version = '1.8.1'
 
 dependencies {
 
-    // ── Core ────────────────────────────────────────────────────────────────
+    // ── Core ─────────────────────────────────────────────────────────────────
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
