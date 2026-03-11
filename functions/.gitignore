@@ -1,0 +1,12 @@
+# Firebase
+.firebase/
+firebase-debug.log
+
+# Node
+node_modules/
+npm-debug.log
+
+# Secrets (never commit)
+.env
+.env.*
+.runtimeconfig.json
