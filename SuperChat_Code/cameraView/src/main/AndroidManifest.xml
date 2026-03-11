@@ -1,0 +1,14 @@
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cjt2325.cameralibrary">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="false">
+    </application>
+</manifest>

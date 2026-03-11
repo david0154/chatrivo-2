@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/typing_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/chatboxbg"
+    tools:showIn="@layout/content_chat">
+
+
+
+    <ImageView
+        android:layout_marginLeft="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/emoji_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/ic_insert_emoticon_black"
+        app:tint="@color/iconTintColor" />
+
+
+    <com.teamxdevelopers.SuperChat.views.ChatEditText
+        android:textColor="@color/colorText"
+        android:id="@+id/et_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:background="@null"
+        android:hint="@string/write_your_message"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        android:layout_weight="1"
+        android:inputType="textMultiLine|textPersonName"
+        android:maxLines="6"
+        android:minLines="1"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/et_message_text_size" />
+
+
+    <ImageView
+        android:id="@+id/img_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_attach_file"
+        app:tint="@color/iconTintColor" />
+
+
+    <ImageView
+        android:id="@+id/camera_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        app:srcCompat="@drawable/ic_photo_camera"
+        app:tint="@color/iconTintColor" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/bgColor"
+    tools:context="com.teamxdevelopers.SuperChat.activities.QrActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/bgColor"
+            android:id="@+id/share_qr_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorText"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Super Chat Contact"
+                android:textColor="@color/colorTextDesc"
+                android:textSize="14dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:src="@drawable/qr_code"
+                android:id="@+id/iv_qr_view"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="This is your QR code. if you share it with someone, they can scan it and start chat with you"
+            android:textColor="@color/colorTextDesc"
+            android:textSize="14dp"
+            android:layout_gravity="center"/>
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_gravity="center"
+         android:layout_marginTop="20dp"
+         android:layout_width="290dp"
+         android:layout_height="wrap_content">
+
+         <RelativeLayout
+             android:id="@+id/btn_scan"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:background="@drawable/round_cornes_blue"
+             android:backgroundTint="#2196F3"
+             android:clickable="true"
+             android:focusable="true"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:padding="10dp"
+                 android:text="Scan"
+                 android:textColor="@color/white"
+                 android:textSize="16dp" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/btn_share"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:background="@drawable/round_cornes_blue"
+             android:backgroundTint="#2196F3"
+             android:clickable="true"
+             android:focusable="true"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:padding="10dp"
+                 android:text="Share"
+                 android:textColor="@color/white"
+                 android:textSize="16dp" />
+
+         </RelativeLayout>
+
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

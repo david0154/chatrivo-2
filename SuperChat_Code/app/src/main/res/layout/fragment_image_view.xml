@@ -1,0 +1,14 @@
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<com.github.chrisbanes.photoview.PhotoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_view"
+    android:adjustViewBounds="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+

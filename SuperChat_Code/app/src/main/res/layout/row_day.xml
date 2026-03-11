@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_top_message"
+    android:layout_marginBottom="@dimen/margin_bottom_message">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_day"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:background="@drawable/bg_day_raw"
+        android:text="TODAY"
+        android:textColor="@color/header_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.teamxdevelopers.SuperChat.fragments.DelateAccountFragment">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic__warning"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_marginStart="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Deleting your account will:"
+                   android:textColor="@color/red"
+                   android:textSize="16dp"
+                   android:textStyle="bold"/>
+               <TextView
+                   android:layout_marginStart="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Delete your account, all of your groups and all of your data from app"
+                   android:textColor="@color/gray"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="20dp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/colorText"
+                       android:text="To delete your account, type 'yes'"/>
+                   <EditText
+                       android:id="@+id/txtyes"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Enter 'yes' to delete the account"/>
+
+                   <LinearLayout
+                       android:layout_marginTop="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <RelativeLayout
+                           android:id="@+id/btn_delete"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/bg_btn_delete">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="10dp"
+                               android:text="Delete my account"
+                               android:textColor="@color/colorBlack"
+                               android:textStyle="bold" />
+
+                       </RelativeLayout>
+
+                       <ProgressBar
+                           android:id="@+id/pb_delete"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:indeterminateTint="@color/red"
+                           android:visibility="gone" />
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+
+
+
+
+</FrameLayout>

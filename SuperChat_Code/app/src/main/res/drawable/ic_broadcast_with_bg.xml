@@ -1,0 +1,11 @@
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_broadcast_bg"/>
+    <item android:drawable="@drawable/ic_broadcast"/>
+</layer-list>

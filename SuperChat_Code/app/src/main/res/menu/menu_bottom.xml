@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemChat"
+        android:title="Chat"
+        app:cnb_iconColor="@color/BottomNavBarText"
+        android:icon="@drawable/ic_line_chat"/>
+
+    <item
+        android:id="@+id/itemStory"
+        android:title="Story"
+        app:cnb_iconColor="@color/BottomNavBarText"
+        android:icon="@drawable/ic_line_story"/>
+
+    <item
+        android:id="@+id/ItemCall"
+        android:title="Call"
+        app:cnb_iconColor="@color/BottomNavBarText"
+        android:icon="@drawable/ic_line_call"/>
+
+    <item
+        android:id="@+id/ItemSetting"
+        android:title="Setting"
+        app:cnb_iconColor="@color/BottomNavBarText"
+        android:icon="@drawable/ic_line_setting"/>
+
+</menu>

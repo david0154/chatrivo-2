@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.teamxdevelopers.SuperChat.fragments.TwoSVFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:text="Add an email to your account \nwhich will be used to reset your PIN \nif you forget it and safeguard your account" />
+
+            <EditText
+                android:textColor="@color/colorText"
+                android:id="@+id/txt_email"
+                android:layout_width="266dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="Email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+
+                android:text="Enter PIN which you'll be \nasked for when you register your \nphone number with Swiper" />
+
+            <EditText
+                android:id="@+id/txt_pin"
+                android:layout_width="266dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorText"
+                android:gravity="center"
+                android:hint="PIN" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+
+                android:text="Confirm your PIN" />
+
+            <EditText
+                android:id="@+id/txt_repin"
+                android:layout_width="266dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorText"
+                android:gravity="center"
+                android:hint="Retype PIN" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_cornes_blue"
+        android:text="Verify Email"
+        android:layout_gravity="center|bottom"
+        android:textColor="#212121" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+
+</FrameLayout>

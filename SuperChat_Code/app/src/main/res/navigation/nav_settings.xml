@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by TeamXDevelopers
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  */
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_settings"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.teamxdevelopers.SuperChat.activities.settings.SettingsFragment"
+        android:label="@string/Settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_profilePreferenceFragment"
+            app:destination="@id/profilePreferenceFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsFragment_to_notificationPreferenceFragment"
+            app:destination="@id/notificationPreferenceFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsFragment_to_chatSettingsPreferenceFragment2"
+            app:destination="@id/chatSettingsPreferenceFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsFragment_to_securityPreferencesFragment"
+            app:destination="@id/securityPreferencesFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsFragment_to_customizeSettingsPreferenceFragment2"
+            app:destination="@id/customizeSettingsPreferenceFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_privacySettingsFragment"
+            app:destination="@id/privacySettingsFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_AccountSettingsFragment"
+            app:destination="@id/AccountSettingsFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profilePreferenceFragment"
+        android:name="com.teamxdevelopers.SuperChat.activities.settings.ProfilePreferenceFragment"
+        android:label="@string/profile" />
+    <fragment
+        android:id="@+id/privacySettingsFragment"
+        android:name="com.teamxdevelopers.SuperChat.fragments.privacyFragment"
+        android:label="@string/privacy" />
+    <fragment
+        android:id="@+id/AccountSettingsFragment"
+        android:name="com.teamxdevelopers.SuperChat.fragments.AccountFragment"
+        android:label="Account" >
+        <action
+            android:id="@+id/action_AccountSettingsFragment_to_AccountEnable2svSettingsFragment"
+            app:destination="@id/AccountEnable2svSettingsFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_AccountSettingsFragment_to_deleteFragment"
+            app:destination="@id/deleteFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_AccountSettingsFragment_to_accountVerificationFragment"
+            app:destination="@id/accountVerificationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/notificationPreferenceFragment"
+        android:name="com.teamxdevelopers.SuperChat.activities.settings.NotificationPreferenceFragment"
+        android:label="@string/notifications" />
+    <fragment
+        android:id="@+id/chatSettingsPreferenceFragment"
+        android:name="com.teamxdevelopers.SuperChat.activities.settings.ChatSettingsPreferenceFragment"
+        android:label="@string/chat" />
+    <fragment
+        android:id="@+id/customizeSettingsPreferenceFragment"
+        android:name="com.teamxdevelopers.SuperChat.fragments.CustomizeFragment"
+        android:label="@string/pref_header_customize" />
+    <fragment
+        android:id="@+id/securityPreferencesFragment"
+        android:name="com.teamxdevelopers.SuperChat.activities.settings.SecurityPreferencesFragment"
+        android:label="@string/security"
+        tools:layout="@layout/fragment_security" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.teamxdevelopers.SuperChat.activities.settings.PrivacyPolicyFragment"
+        android:label="@string/privacy_policy" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.teamxdevelopers.SuperChat.activities.settings.AboutFragment"
+        android:label="@string/about" />
+    <fragment
+        android:id="@+id/deleteFragment"
+        android:name="com.teamxdevelopers.SuperChat.fragments.DelateAccountFragment"
+        android:label="Delete Account" />
+    <fragment
+        android:id="@+id/AccountSet2svSettingsFragment"
+        android:name="com.teamxdevelopers.SuperChat.fragments.TwoSVFragment"
+        android:label="Two-step verification" />
+    <fragment
+        android:id="@+id/AccountEnable2svSettingsFragment"
+        android:name="com.teamxdevelopers.SuperChat.fragments.Enable2svFragment"
+        android:label="Two-step verification" >
+        <action
+            android:id="@+id/action_AccountEnable2svSettingsFragment_to_AccountSet2svSettingsFragment"
+            app:destination="@id/AccountSet2svSettingsFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/accountVerificationFragment"
+        android:name="com.teamxdevelopers.SuperChat.fragments.AccountVerificationFragment"
+        android:label="@string/account_verification"
+        tools:layout="@layout/fragment_account_verification" />
+</navigation>
